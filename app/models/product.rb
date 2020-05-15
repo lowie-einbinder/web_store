@@ -1,2 +1,2 @@
-class Picture < ApplicationRecord
+class Product < ApplicationRecord
 end
