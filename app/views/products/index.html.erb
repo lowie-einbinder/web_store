@@ -1,8 +1,10 @@
 <h1>Products<h1>
-
+<%= link_to 'add product', products_new_path %>
 <% @products.each do |product| %>
   <p><%= product.name %></p>
   <p><%= product.description %> </p>
   <p><%=product.price%></p>
   <%= link_to 'more info on product', product.url, target: :_blank %>
+  <%=link_to 'show product', product_path(product)%>
+
 <% end %>
